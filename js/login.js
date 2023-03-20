@@ -4,7 +4,7 @@ $(document).ready(function() {
         event.preventDefault();
         var form_data = $(this).serialize();
         $.ajax({
-            url: 'login.php',
+            url: '/php/login.php',
             method: 'POST',
             data: form_data,
             success: function(response) {
